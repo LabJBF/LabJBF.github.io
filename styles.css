@@ -2,7 +2,7 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 /* Silver Surfer / cosmic glass visual direction */
 :root{--bg:#050607;--panel:rgba(20,22,25,.58);--text:#f4f6f8;--muted:#a6abb2;--line:rgba(235,242,248,.18);--blue:#aebdca;--violet:#8da9c8}
-body{background:#030405}
+body{background:#030405;position:relative;isolation:isolate}
 body::before{content:"";position:fixed;inset:-22px;z-index:-3;pointer-events:none;background:linear-gradient(90deg,rgba(0,0,0,.78),rgba(0,0,0,.48) 48%,rgba(0,0,0,.72)),url("assets/silver-surfer-bg.jpg") center 35%/cover no-repeat;filter:blur(7px) grayscale(1);transform:scale(1.035)}
 body::after{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background:radial-gradient(ellipse at 52% 30%,transparent 0,rgba(0,0,0,.18) 48%,rgba(0,0,0,.72) 100%)}
 .ambient-one,.ambient-two{background:#b9c9d8;opacity:.09}
